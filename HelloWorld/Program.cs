@@ -15,7 +15,7 @@ namespace HelloWorld
             //Part One: Greetings Statement
 
             //string messageOne = "Hello World!";
-            //string messageTwo = "I am Spartacus";
+            string messageTwo = "I am Spartacus";
 
             //////Part Two: Initial Spartacus attributes
 
@@ -124,15 +124,15 @@ namespace HelloWorld
             //    Console.WriteLine("We will march to Nuceria");
             //}
 
-            //Part Twelve IF Else statements
-            Console.WriteLine("What is your rank soldier?");
-            string rank = Console.ReadLine().ToLower();
+            //Part Twelve: IF Else statements
+            //Console.WriteLine("What is your rank soldier?");
+            //string rank = Console.ReadLine().ToLower();
 
-            Console.WriteLine("What is your age soldier?");
-            int age = int.Parse(Console.ReadLine());
+            //Console.WriteLine("What is your age soldier?");
+            //int age = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("What is your job soldier?");
-            string job = Console.ReadLine().ToLower();
+            //Console.WriteLine("What is your job soldier?");
+            //string job = Console.ReadLine().ToLower();
 
             //if ((rank == "officer") || (age <= 26))
             //{
@@ -147,30 +147,65 @@ namespace HelloWorld
             //    Console.WriteLine("Sorry you are staying home.");
             //}
 
-            switch (job)
-            {
-                case "infantry":
-                    Console.WriteLine("You will carry a sword.");
-                    break;
+            //switch (job)
+            //{
+            //    case "infantry":
+            //        Console.WriteLine("You will carry a sword.");
+            //        break;
 
-                case "archers":
-                    Console.WriteLine("You will carry a bow and arrow.");
-                    break;
+            //    case "archers":
+            //        Console.WriteLine("You will carry a bow and arrow.");
+            //        break;
 
-                case "supply":
-                    Console.WriteLine("You will carry pots and pans.");
-                    break;
+            //    case "supply":
+            //        Console.WriteLine("You will carry pots and pans.");
+            //        break;
 
-                case "specialist":
-                    Console.WriteLine("You will operate the catapault.");
-                    break;
+            //    case "specialist":
+            //        Console.WriteLine("You will operate the catapault.");
+            //        break;
 
-                default:
-                    Console.WriteLine("You will ride horseback.");
-                    break;
-            }
+            //    default:
+            //        Console.WriteLine("You will ride horseback.");
+            //        break;
+            //}
 
-                
+            //Part Thirteen: Array examples
+            string[] foodList = new string[5];
+            foodList[0] = "Milk";
+            foodList[1] = "Fruit";
+            foodList[2] = "Meat";
+            foodList[3] = "Wine";
+            foodList[4] = "Bread";
+            Console.WriteLine("{0}, {1}, {2}, {3}, {4},", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
+
+            //int[] foodAmount = new int[5];
+            //foodAmount[0] = 1000;
+            //foodAmount[1] = 100;
+            //foodAmount[2] = 2000;
+            //foodAmount[3] = 10000;
+            //foodAmount[4] = 1500;
+            //Console.WriteLine("{0}, {1}, {2}, {3}, {4}", foodAmount[0], foodAmount[1], foodAmount[2], foodAmount[3], foodAmount[4]);
+            int[] foodAmount = new int[] { 1000, 100, 2000, 10000, 1500 };
+            Console.WriteLine(foodAmount[0] + ", " + foodAmount[1] + ", " + foodAmount[2] + ", " + foodAmount[3] + ", " + foodAmount[4]);
+
+            Console.WriteLine(foodList[0] + ": " + foodAmount[0] + " " + foodList[1] + ": " + foodAmount[1] + " " + foodList[2] + ": " + foodAmount[2] + " " + foodList[3] + ": " + foodAmount[3] + " " + foodList[4] + ": " + foodAmount[4]);
+
+            Console.WriteLine(foodList.Length);
+
+            string[] elements = messageTwo.Split(' ');
+            Console.WriteLine(elements[0]);
+            Console.WriteLine(elements[1]);
+            Console.WriteLine(elements[2]);
+
+            string myName = "SUE";
+            myName.ToLower();
+            Console.WriteLine(myName);
+            char[] letters = myName.ToCharArray();
+            Console.Write(letters[0]);
+            Console.Write(letters[1]);
+            Console.WriteLine(letters[2]);
+
         }
 
 
