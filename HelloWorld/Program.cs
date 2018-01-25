@@ -15,22 +15,22 @@ namespace HelloWorld
             //Part One: Greetings Statement
 
             //string messageOne = "Hello World!";
-            string messageTwo = "I am Spartacus";
+            //string messageTwo = "I am Spartacus";
 
             //////Part Two: Initial Spartacus attributes
 
-            //int ageOne = 35;
-            //int ageTwo = 45;
-            //int ageThree = 80;
-            //double heightOne = 72.50;
-            //double heightTwo = 91.45;
-            //float weightOne = 210.0284606f;
-            //float weightTwo = 331.12345678f;
-            //bool isGodLikeOne = true;
-            //bool isGodLikeTwo = false;
-            //char genderMale = 'M';
-            //char genderFemale = 'F';
-            ////Part Three: Display variable values
+            int ageOne = 35;
+            int ageTwo = 45;
+            int ageThree = 80;
+            double heightOne = 72.50;
+            double heightTwo = 91.45;
+            float weightOne = 210.0284606f;
+            float weightTwo = 331.12345678f;
+            bool isGodLikeOne = true;
+            bool isGodLikeTwo = false;
+            char genderMale = 'M';
+            char genderFemale = 'F';
+            //Part Three: Display variable values
 
             //Console.WriteLine(messageOne);
             //Console.WriteLine(messageTwo);
@@ -263,49 +263,69 @@ namespace HelloWorld
 
             //For Loops
             //went way overboard and created an app for a grocery list
-            Console.WriteLine("\t\t\t\tGrocery List Generator \n\n");
-            Console.WriteLine("Please enter an amout of grocery items to get.");
-            int items = int.Parse(Console.ReadLine());
+            //Console.WriteLine("\t\t\t\tGrocery List Generator \n\n");
+            //Console.WriteLine("Please enter an amout of grocery items to get.");
+            //int items = int.Parse(Console.ReadLine());
 
-            string[] foodList = new string[items];
+            //string[] foodList = new string[items];
 
-            int[] foodAmount = new int[items];
+            //int[] foodAmount = new int[items];
 
-            string[] foodAmountUnit = new string[items];
+            //string[] foodAmountUnit = new string[items];
 
-            for (int i = 0; i < foodList.Length; i++)
-            {
-                Console.WriteLine("Please enter a grocery item");
-                foodList[i] = Console.ReadLine().ToLower();
-            }
+            //for (int i = 0; i < foodList.Length; i++)
+            //{
+            //    Console.WriteLine("Please enter a grocery item");
+            //    foodList[i] = Console.ReadLine().ToLower();
+            //}
+
+            //for (int i = 0; i < foodAmountUnit.Length; i++)
+            //{
+            //    Console.WriteLine("Please enter the unit of measurment for " + foodList[i]);
+            //    foodAmountUnit[i] = Console.ReadLine().ToLower();
+            //}
+
+            //for (int i = 0; i < foodAmount.Length; i++)
+            //{
+            //    Console.WriteLine("Please enter the number of " + foodAmountUnit[i] + " needed of " + foodList[i]);
+            //    foodAmount[i] = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine("");
+            //Console.WriteLine("Grocery List:");
+            //Console.WriteLine("");
+
+            //for (int i = 0; i < foodList.Length; i++)
+            //{
+            //    Console.WriteLine(foodAmount[i] + " " + foodAmountUnit[i] + " of " + foodList[i]);
+            //}
+
+            //Part Fifteen Methods
+
             
-            for (int i = 0; i < foodAmountUnit.Length; i++)
-            {
-                Console.WriteLine("Please enter the unit of measurment for " + foodList[i]);
-                foodAmountUnit[i] = Console.ReadLine().ToLower();
+                ageOne = 35;
+               /* bool isGodLike = true;*/ // I am not showing all the code.
+                isGodLikeOne = IsGodLike(ageOne);
+                Console.WriteLine("To say our hero is God like is " + isGodLikeOne);
             }
-
-            for (int i = 0; i < foodAmount.Length; i++)
+            static bool IsGodLike(int age)
             {
-                Console.WriteLine("Please enter the number of " + foodAmountUnit + " needed of " + foodList[i]);
-                foodAmount[i] = int.Parse(Console.ReadLine());
+                bool status;
+                if (age % 2 == 0)
+                {
+                    status = false;
+                }
+                else
+                {
+                    status = true;
+                }
+                return status;
             }
-            Console.WriteLine("");
-            Console.WriteLine("Grocery List:");
-            Console.WriteLine("");
-
-            for (int i = 0; i < foodList.Length; i++)
-            {
-                Console.WriteLine(foodAmount[i] + " " + foodAmountUnit[i] + " of " + foodList[i]);
-            }
-
-
 
 
 
         }
 
     }
-}
+
 
 
